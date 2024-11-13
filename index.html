@@ -3,660 +3,190 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>afueth - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  <title>Afueth Thomas - Portfolio</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: #333;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      font-size: 1rem;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .info h3 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .info p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .contact,
+    .skills,
+    .projects {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact li,
+    .skills li,
+    .projects li {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .projects img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
+    <div class="header">
+      <h1>Afueth Thomas</h1>
+      <p>System Engineer | Web Developer</p>
+    </div>
 
-  <!--
-    - #MAIN
-  -->
+    <div class="content">
 
-  <main>
+      <section class="section info">
+        <img src="./assets/images/afueth.jpg" alt="Afueth Thomas" class="avatar">
+        <h3>About Me</h3>
+        <p>
+          I'm a System Engineer and Web Developer at Malayala Manorama Co. Ltd., with expertise in VMware, Docker, AWS, and web development using React, Node.js, and more.
+        </p>
+      </section>
 
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/afueth.jpg" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Afueth Thomas</h1>
-
-          <p class="title"> Web developer | Engineer-Systems</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:afueth@yahoo.com" class="contact-link">afueth@yahoo.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1999-12-20">December 20</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Kottayam, Kerala, India</address>
-            </div>
-
-          </li>
-
+      <section class="section">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Frontend: HTML, CSS, JavaScript, React, MUI</li>
+          <li>Backend: Node.js, FastAPI, PHP</li>
+          <li>System Engineering: VMware, AWS, Azure</li>
+          <li>Automation: Python, Bash, Go</li>
+          <li>Other: Docker, Kubernetes, SAP, Networking</li>
         </ul>
+      </section>
 
-        <div class="separator"></div>
+      <section class="section">
+        <h2>Experience</h2>
+        <p><strong>Engineer - Systems</strong><br>Malayala Manorama Co. Ltd.<br>September 2023 - Present</p>
+      </section>
 
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/afueth/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.twitter.com/@Afueth_Thomas/" class="social-link" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.instagram.com/_afueth_/" class="social-link" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://afueth.medium.com/" class="social-link" target="_blank">
-              <ion-icon name="logo-medium"></ion-icon>
-            </a>
-          </li>
+      <section class="section">
+        <h2>Education</h2>
+        <p><strong>MCA</strong>, Amal Jyothi College of Engineering, Kanjirapally (2021 - 2023)</p>
+        <p><strong>BCA</strong>, Christ College Kattappana (2018 - 2021)</p>
+      </section>
+
+      <section class="section">
+        <h2>Contact</h2>
+        <ul class="contact">
+          <li>Email: <a href="mailto:afueth@yahoo.com">afueth@yahoo.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/afueth/" target="_blank">linkedin.com/in/afueth/</a></li>
+          <li>Twitter: <a href="https://twitter.com/Afueth_Thomas" target="_blank">@Afueth_Thomas</a></li>
+          <li>Instagram: <a href="https://instagram.com/_afueth_" target="_blank">@_afueth_</a></li>
+          <li>Medium: <a href="https://afueth.medium.com" target="_blank">afueth.medium.com</a></li>
         </ul>
-        
-      </div>
+      </section>
 
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Gallery</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
+      <section class="section">
+        <h2>Projects</h2>
+        <ul class="projects">
+          <li><img src="./assets/images/neelakurinji.jpg" alt="Project Image 1"></li>
+          <li><img src="./assets/images/n1.jpeg" alt="Project Image 2"></li>
+          <li><img src="./assets/images/n2.jpeg" alt="Project Image 3"></li>
+          <li><img src="./assets/images/n3.jpeg" alt="Project Image 4"></li>
         </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hello! I'm a System Engineer and Web Developer at Malayala Manorama Co. Ltd. I love blending coding and infrastructure work.
-          </p>
-
-          <p>  
-       On the development side, I'm skilled in React, HTML, CSS, Bootstrap, MUI, Node.js, Axios, JavaScript, AJAX, MongoDB, and MySQL, crafting user-friendly websites.
-       In production, 
-       I manage VMware technologies like Horizon, NSX, and ESXi Servers, and automate tasks using Python, Bash, Go, and YAML.
-       I'm experienced with Docker, Kubernetes, AWS, Azure, L1 ticketing, hardware support, SAP management, and network troubleshooting.
-       My goal is to simplify technology and make it work seamlessly for businesses.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  Frontend development using React, HTML, JavaScript, CSS, MUI.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  Backend  development using FastAPI, Python, PHP.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">System Engineering</h4>
-
-                <p class="service-item-text">
-                  Well Knowledge in VMware ESXi, NSX and Horizon.
-                  Automation using Python, YAML and GO, and knowledge 
-                  in Cloud Services like Azure and AWS.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I like to take Photos and Watch Movies
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-      
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Engineer - Systems</h4>
-
-              <span>2023 September — Present</span>
-
-              <p class="timeline-text">
-                Working as System Engineer and Custom web Development 
-              </p>
-
-            </li>
-
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Amal Jyothi College of Engineering , Kanjirapally</h4>
-
-              <span>2021 — 2023</span>
-
-              <p class="timeline-text">
-              Master of Computer Applications
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Christ College Kattappana</h4>
-
-              <span>2018 — 2021</span>
-
-              <p class="timeline-text">
-                Bachelor of Computer Applications
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">St.Sebastians's H.S.S Nedumkandam</h4>
-
-              <span>2016 — 2018</span>
-
-              <p class="timeline-text">
-                Plus Two & Matriculation
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="gallery" data-page="gallery">
-
-        <header>
-          <h2 class="h2 article-title">Gallery</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value></div>
-
-            </button>
-          </div>
-
-          <ul class="project-list">
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/neelakurinji.jpg" >
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/n1.jpeg" alt="orizon" loading="lazy">
-                </figure>
-              </a>
-            </li>
-
-            <li class=" ">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/n2.jpeg" alt="fundo" loading="lazy">
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/n3.jpeg" alt="brawlhalla" loading="lazy">
-                </figure>
-              </a>
-            </li>
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/n4.jpeg" alt="dsm." loading="lazy">
-                </figure>
-              </a>
-            </li>
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/night.jpg" alt="dsm." loading="lazy">
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/kolukkumalai.jpg" alt="summary" loading="lazy">
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/cam.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                  </div>
-
-                  <img src="./assets/images/Tiger-rock.jpg" alt="arrival" loading="lazy">
-                </figure>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
+      </section>
 
     </div>
 
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <div class="footer">
+      <p>&copy; 2024 Afueth Thomas - All Rights Reserved.</p>
+    </div>
+  </div>
 </body>
 
 </html>
